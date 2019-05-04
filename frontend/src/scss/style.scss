@@ -25,6 +25,16 @@ img {
   width: 100%;
 }
 
+/*Every other section will have background of white then grey*/
+.wrapper {
+  background: white;
+  padding-bottom: 3rem;
+}
+
+.wrapper:nth-child(odd) {
+  background: #f7f7f7;
+}
+
 /* NavBar on hover dropdown menu*/
 .dropdown:hover > .dropdown-menu {
   display: block;
@@ -55,3 +65,26 @@ img {
 }
 
 /*Summary*/
+.ability {
+  margin-top: 2rem;
+}
+
+.ability-title {
+  display: flex;
+}
+.ability-title > span {
+  margin: 0.5rem;
+}
+
+.summary {
+  margin-top: 2rem;
+}
+
+.summary-content {
+  margin-bottom: 1rem;
+}
+
+/*Blog List*/
+.blog {
+  margin-top: 2rem;
+}

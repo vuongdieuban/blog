@@ -7,13 +7,13 @@ import {
   FormControl,
   Button
 } from "react-bootstrap";
+import logo from "../dist/img/bitcan_logo.jpg";
 
 const NavBar = () => {
   return (
     <Navbar className="fixed-top" bg="light" expand="lg">
-      {/* Logo not rendering here */}
       <Navbar.Brand href="#home">
-        <img src="../dist/img/logo_ex.jpg" alt="Logo" />
+        <img src={logo} alt="Logo" />
       </Navbar.Brand>
 
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
