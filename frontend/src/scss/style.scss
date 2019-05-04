@@ -1,0 +1,57 @@
+/* General Config */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+/* NavBar on hover dropdown menu*/
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+/* Landing*/
+.landing {
+  background: url("../img/bitcan.jpg") no-repeat center center/cover;
+
+  /* 100% view port height = 100vh */
+  height: 100vh;
+
+  &-inner {
+    color: #333;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+
+    &-button {
+      margin-right: 1rem;
+    }
+  }
+}
+
+/*Summary*/
