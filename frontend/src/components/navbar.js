@@ -7,27 +7,42 @@ import {
   FormControl,
   Button
 } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import logo from "../dist/img/bitcan_logo.jpg";
 
 const NavBar = () => {
   return (
-    <Navbar className="fixed-top" bg="light" expand="lg">
-      <Navbar.Brand href="#home">
-        <img src={logo} alt="Logo" />
-      </Navbar.Brand>
+    <Navbar className="" bg="light" expand="lg">
+      <Link to="/">
+        <Navbar.Brand href="/">
+          <img src={logo} alt="Logo" />
+        </Navbar.Brand>
+      </Link>
 
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link href="#home">Home</Nav.Link>
-          <Nav.Link href="#link">About</Nav.Link>
+          <Link to="/">
+            <Nav.Link href="/">Home</Nav.Link>
+          </Link>
+          <Link to="/about-us">
+            <Nav.Link href="/about-us">About</Nav.Link>
+          </Link>
 
           <NavDropdown title="Services" id="basic-nav-dropdown">
-            <NavDropdown.Item href="#action/3.1">Oil</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.2"> Research</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.3">
-              Something Else
-            </NavDropdown.Item>
+            <Link to="service/oil">
+              <NavDropdown.Item href="service/oil">Oil</NavDropdown.Item>
+            </Link>
+            <Link to="/service/research">
+              <NavDropdown.Item href="/service/research">
+                Research
+              </NavDropdown.Item>
+            </Link>
+            <Link to="/service/simulation">
+              <NavDropdown.Item href="/service/simulation">
+                Simulation
+              </NavDropdown.Item>
+            </Link>
           </NavDropdown>
         </Nav>
 

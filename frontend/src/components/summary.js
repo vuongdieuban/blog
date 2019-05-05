@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const Summary = () => {
   return (
@@ -26,9 +27,11 @@ const Summary = () => {
                     Quas fuga in nulla similique?
                   </p>
                 </div>
-                <Button className="summary-inner-button" variant="success">
-                  View More
-                </Button>
+                <Link to="/about-us">
+                  <Button className="summary-inner-button" variant="success">
+                    View More
+                  </Button>
+                </Link>
               </div>
             </div>
 
